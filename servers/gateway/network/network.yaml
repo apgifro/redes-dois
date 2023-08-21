@@ -1,0 +1,18 @@
+network:
+  ethernets:
+    enp0s3:
+      dhcp4: true
+    enp0s8:
+      addresses:
+      - 172.16.100.1/24
+      nameservers:
+        addresses: [172.16.100.2, 172.16.100.3]
+        search: []
+    enp0s9:
+      addresses:
+      - 200.50.100.2/24
+      - 200.50.100.3/24
+      nameservers:
+        addresses: []
+        search: []
+  version: 2

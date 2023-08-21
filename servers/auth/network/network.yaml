@@ -1,0 +1,9 @@
+network:
+  ethernets:
+    enp0s3:
+      addresses:
+      - 172.16.100.6/24
+      nameservers:
+        addresses: [172.16.100.2, 172.16.100.3]
+        search: []
+  version: 2
