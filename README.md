@@ -1,8 +1,8 @@
 # Serviços de Redes II
 
-- Gateway
+- Gateway (Debian)
 - DNS I
 - DNS II
 - Web
 - Storage
-- Authentication
+- Authentication (Debian)
