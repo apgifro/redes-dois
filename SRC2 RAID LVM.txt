@@ -1,0 +1,32 @@
+cat /dev/sda1
+cat /proc/partitions 
+sudo apt install mdadm -y
+mdadm --create /dev/md1 --level=5 --raid-devices=7 /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf /dev/sdg /dev/sdh 
+mdadm --examine --scan
+blkid
+mdadm --examine --scan
+mdadm --detail /dev/md1
+cd /media/
+mkdir raid
+mkfs.ext4 /dev/md1
+mount /dev/md1 /media/raid
+lsblk
+nano teste.sh
+mdadm --detail /dev/md1
+nano /etc/fstab
+
+pvcreate /dev/md127 
+pvdisplay 
+vgcreate storage /dev/md127 
+vgdisplay -v storage
+lvcreate -L 1G -n arquivo storage
+vgdisplay -v storage
+mkfs.ext4 /dev/storage/arquivo
+blkid
+nano /etc/fstab
+mkdir /media/arquivo
+mount -a
+lsblk
+lvreduce -L -4M /dev/storage/arquivo 
+lvextend -L +10M /dev/storage/arquivo 
+history 
