@@ -10,6 +10,7 @@ sudo postconf
 sudo cp main.cf main.cf.backup
 
 sudo nano /etc/aliases
+pessoal: alexandre
 sudo postalias /etc/aliases
 
 sudo nano main.cf
