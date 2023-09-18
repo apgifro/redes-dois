@@ -29,7 +29,7 @@ mailbox_size_limit = 0
 # Interfaces em estado listen para o MTA
 inet_interfaces = all
 
-# tamanho máximo de mensagens
+# tamanho mÃ¡ximo de mensagens
 message_size_limit = 10000000 
 
 # Sinal de redirecionamento para pastas do cliente
