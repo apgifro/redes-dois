@@ -1,0 +1,4 @@
+apt install slapd ldap-utils
+/etc/init.d/slapd status
+cp ldap.conf ldap.conf.original
+nano ldap.conf
